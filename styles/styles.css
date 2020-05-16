@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  --font-display: "Montserrat", sans-serif;
+  --font-body: "Space Mono", monospace;
+  --sdn-gray: #404e4d;
+  --sdn-red: #c3423f;
+  --sdn-green: #9bc53d;
+  --sdn-yellow: #fde74c;
+  --sdn-blue: #5bc0eb;
+}
+html {
+  box-sizing: border-box;
+
+  font-family: mr-eaves-modern, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+h1,
+h2 {
+  font-family: mr-eaves-modern, sans-serif;
+
+  font-weight: 100;
+
+  font-style: normal;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sun {
+  width: 32rem;
+  height: 32rem;
+
+  margin-bottom: -3.2rem;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  clip-path: polygon(
+    -50% 0px,
+    150% -50%,
+    150% 55%,
+    -50% 55%,
+    -50% 62%,
+    150% 62%,
+    150% 70%,
+    0 70%,
+    -50% 75%,
+    150% 75%,
+    150% 80%,
+    0 80%,
+    -50% 82%,
+    150% 82%,
+    150% 85%,
+    0 85%,
+    -50% 87%,
+    150% 87%,
+    150% 90%,
+    0 90%
+  );
+}
+
+.smooth-anim {
+  transition: 0.15s;
+  transition-timing-function: ease-in-out;
+}
