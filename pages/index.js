@@ -1,33 +1,64 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
+import ExternalLinkIcon from "../assets/ExternalLinkIcon";
 
 const Index = () => {
   return (
     <Layout>
-      <section id="landing" className="flex w-full flex-col pt-4 items-center">
+      <section
+        id="landing"
+        className="flex w-full flex-col pt-4 items-center mb-10"
+      >
         <div className="sun rounded-full"></div>
-        <h1 className="text-6xl uppercase font-hairline text-aville border-b-2 border-aville leading-tight">
+        <h1 className="text-6xl uppercase font-hairline text-mtn border-b-2 border-mtn leading-tight">
           {"Rim Vilgalys"}
         </h1>
-        <h2 className="text-3xl mt-4 font-hairline text-aville">
-          {"Full Stack Developer"}
+        <h2 className="text-3xl mt-4 font-hairline text-mtn mx-4">
+          <span>{"Full Stack Developer "}</span>
+          <span>{"& Founder of "}</span>
+          <a
+            href="https://brothersvilgalys.com/"
+            target="_blank"
+            rel="noopener"
+            className="border-b border-mtn"
+          >
+            {"Brothers Vilgalys Spirits"}
+          </a>
         </h2>
-        <nav className="flex flex-row items-center justify-around w-2/3 mt-8 py-4 text-2xl text-indigo-500 border-b border-t border-blue-200">
-          <Link href="">
-            <span className="px-4 border-r-2 border-l-2 border-transparent hover:border-indigo-200 cursor-pointer">
-              {"Portfolio"}
+        <article
+          id="tech-stack"
+          className="flex flex-row flex-wrap items-center justify-around w-10/12 sm:w-1/2 mt-8 text-xl"
+        >
+          <span className="font-light text-space text-xl px-8 py-2 border border-sun rounded-lg sun-shadow">
+            {"Hello 👋 I'm Rim Vilgalys (he/him). I'm a Developer and UX designer from Durham, North Carolina. I make great stuff with React, Node.js, and Severless JAM-Stack apps. " +
+              "I play ultimate and love to travel. I care about clean code, good design, and a better world. 🌍"}
+          </span>
+        </article>
+        <nav className="flex flex-row flex-wrap items-center justify-between w-2/3 mt-8 py-4 px-4 font-light text-2xl text-mtn border-b border-t border-aville">
+          <Link href="/portfolio">
+            <span className="px-4 border-r-2 border-l-2 border-transparent hover:border-aville cursor-pointer my-2">
+              {"Dev Portfolio"}
             </span>
           </Link>
           <Link href="">
-            <span className="px-4 border-r-2 border-l-2 border-transparent hover:border-indigo-200 cursor-pointer">
-              {"Blog"}
+            <span className="px-4 border-r-2 border-l-2 border-transparent hover:border-aville cursor-pointer my-2">
+              {"Writing"}
             </span>
           </Link>
-          <Link href="">
-            <span className="px-4 border-r-2 border-l-2 border-transparent hover:border-indigo-200 cursor-pointer">
+          <Link href="/contact">
+            <span className="px-4 border-r-2 border-l-2 border-transparent hover:border-aville cursor-pointer my-2">
               {"Contact"}
             </span>
           </Link>
+          <a
+            href="https://github.com/rvilgalys"
+            target="_blank"
+            rel="noopener noreferer"
+            className=" flex px-4 border-r-2 border-l-2 border-transparent hover:border-aville cursor-pointer my-2"
+          >
+            <span>{"Github"}</span>
+            <ExternalLinkIcon className="w-6 ml-1"></ExternalLinkIcon>
+          </a>
         </nav>
       </section>
     </Layout>

@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 html {
-  --font-display: "Montserrat", sans-serif;
-  --font-body: "Space Mono", monospace;
-  --sdn-gray: #404e4d;
-  --sdn-red: #c3423f;
-  --sdn-green: #9bc53d;
-  --sdn-yellow: #fde74c;
-  --sdn-blue: #5bc0eb;
+  --font-display: mr-eaves-modern, sans-serif;
+  --font-body: mr-eaves-modern, sans-serif;
+  --color-aville: #a6c1ee;
+  --color-mountain: #6392e6;
+  --color-space: #392f5a;
+  --color-midnight: #080705;
+  --color-sun: #fbc2eb;
 }
 html {
   box-sizing: border-box;
@@ -17,14 +17,15 @@ html {
   font-family: mr-eaves-modern, sans-serif;
   font-style: normal;
   font-weight: 100;
+  transition: 0.1s;
+
+  transition-timing-function: ease-in-out;
 }
 
 h1,
 h2 {
   font-family: mr-eaves-modern, sans-serif;
-
   font-weight: 100;
-
   font-style: normal;
 }
 *,
@@ -38,9 +39,8 @@ h2 {
 }
 
 .sun {
-  width: 32rem;
-  height: 32rem;
-
+  width: 24rem;
+  height: 24rem;
   margin-bottom: -3.2rem;
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   clip-path: polygon(
@@ -67,7 +67,16 @@ h2 {
   );
 }
 
+.sun-sm {
+  width: 5rem;
+  height: 5rem;
+}
+
 .smooth-anim {
   transition: 0.15s;
   transition-timing-function: ease-in-out;
+}
+
+.sun-shadow {
+  box-shadow: 0px 3px 20px -10px var(--color-sun);
 }
