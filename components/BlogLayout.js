@@ -2,7 +2,6 @@ import Layout from "./Layout";
 import NavHeader from "./NavHeader";
 
 import { MDXProvider } from "@mdx-js/react";
-import Highlight, { defaultProps } from "prism-react-renderer";
 
 const mdxComponents = {
   h1: (props) => (
@@ -29,9 +28,7 @@ const mdxComponents = {
       {...props}
     ></p>
   ),
-  pre: (props) => (
-    <pre className="p-4 rounded bg-aville text-midnight" {...props}></pre>
-  ),
+  pre: (props) => <pre className="rounded" {...props}></pre>,
 };
 
 const BlogLayout = ({ children, title }) => (
