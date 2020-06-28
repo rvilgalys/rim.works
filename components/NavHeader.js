@@ -4,7 +4,10 @@ const NavHeader = ({ pathname }) => {
   return (
     <header className="w-full flex flex-row items-center h-20 px-4 sm:px-12 pt-2 justify-between">
       <Link href="/">
-        <a className="sun sun-sm rounded-full h-20 self-start flex flex-col items-center justify-center"></a>
+        <a className="flex flex-row items-center">
+          <div className="sun sun-sm rounded-full"></div>
+          <h1 className="text-3xl text-aville uppercase ml-3">Rim Vilgalys</h1>
+        </a>
       </Link>
       <nav>
         <Link href="/portfolio">
