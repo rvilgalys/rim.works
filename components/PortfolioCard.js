@@ -21,11 +21,10 @@ const PortfolioCard = ({
       layoutTransition={spring}
       className="w-64 m-8 border-sun rounded-lg sun-shadow flex flex-col items-start p-4"
     >
-      <h3 className="text-2xl font-display font-light text-mtn border-b-2 border-mtn">
-        {title}
-      </h3>
-      <span className="mt-2 text-midnight inline-flex justify-between items-center w-full text-lg font-light">
-        {desc}
+      <div className="flex items-center justify-between">
+        <h3 className="text-2xl font-display font-light text-mtn border-b-2 border-mtn">
+          {title}
+        </h3>
         <a
           href={href}
           rel="noopener"
@@ -35,6 +34,9 @@ const PortfolioCard = ({
           {"Visit"}
           <ExternalLinkIcon className="w-6 ml-1"></ExternalLinkIcon>
         </a>
+      </div>
+      <span className="mt-2 text-midnight w-full text-lg font-light">
+        {desc}
       </span>
       <div className="flex items-center w-full flex-wrap">
         {tags.map((tag, index) => (

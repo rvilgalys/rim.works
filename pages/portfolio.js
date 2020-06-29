@@ -140,7 +140,7 @@ const Porfolio = () => {
           ))}
         </section>
       </section>
-      <main className="w-full flex flex-wrap items-center justify-center px-10">
+      <main className="w-full flex flex-wrap items-center justify-center px-10 overflow-y-auto">
         {portfolio.reduce(
           (result, data, index) =>
             selectedTags.length === 0 ||
