@@ -5,6 +5,23 @@ import { useState } from "react";
 
 const portfolio = [
   {
+    title: "Pipeline Pro Tools 2.0",
+    href: "https://app.pipelineprotools.com/",
+    desc:
+      "Ground-up rewrite of paid suite of tools for Real Estate lead capture.",
+    image: "",
+    tags: [
+      "next.js",
+      "react",
+      "tailwind",
+      "jamstack",
+      "design",
+      "dev",
+      "datascraping",
+    ],
+    date: "2020",
+  },
+  {
     title: "SplitCrunch",
     href: "https://splitcrunch.com/",
     desc:
