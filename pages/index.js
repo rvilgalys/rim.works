@@ -36,17 +36,17 @@ const Index = () => {
         </article>
         <nav className="flex flex-row flex-wrap items-center justify-between w-2/3 mt-8 py-4 px-4 font-light text-2xl text-mtn border-b border-t border-aville">
           <Link href="/portfolio">
-            <span className="px-4 border-r-2 border-l-2 border-transparent hover:border-aville cursor-pointer my-2">
+            <span className="px-4 cursor-pointer my-2 aville-hover">
               {"Dev Portfolio"}
             </span>
           </Link>
           <Link href="">
-            <span className="px-4 border-r-2 border-l-2 border-transparent hover:border-aville cursor-pointer my-2">
+            <span className="px-4 cursor-pointer my-2 aville-hover">
               {"Writing"}
             </span>
           </Link>
           <Link href="/contact">
-            <span className="px-4 border-r-2 border-l-2 border-transparent hover:border-aville cursor-pointer my-2">
+            <span className="px-4 cursor-pointer my-2 aville-hover">
               {"Contact"}
             </span>
           </Link>
@@ -54,7 +54,7 @@ const Index = () => {
             href="https://github.com/rvilgalys"
             target="_blank"
             rel="noopener noreferer"
-            className=" flex px-4 border-r-2 border-l-2 border-transparent hover:border-aville cursor-pointer my-2"
+            className=" flex px-4 cursor-pointer my-2 aville-hover"
           >
             <span>{"Github"}</span>
             <ExternalLinkIcon className="w-6 ml-1"></ExternalLinkIcon>

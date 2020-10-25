@@ -90,6 +90,17 @@ code {
   box-shadow: 0px 3px 20px -10px var(--color-sun);
 }
 
+.aville-hover {
+  box-shadow: 0px 3px 20px -10px rgba(255, 255, 255, 0);
+  border: 1px rgba(255, 255, 255, 0);
+  transition: 0.15s;
+  transition-timing-function: ease-in-out;
+}
+.aville-hover:hover {
+  box-shadow: 0px 3px 16px -7px var(--color-aville);
+  border: 1px var(--color-aville);
+}
+
 .w-fit-content {
   width: fit-content;
 }
