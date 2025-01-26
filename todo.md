@@ -1,4 +1,4 @@
-stuff i want to finish on this blog: 
+stuff i want to finish on this blog:
 
 - category / date sorting in /writing
 - links back to /writing on blog posts
