@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
 import ExternalLinkIcon from "../assets/ExternalLinkIcon";
+import ExtLink from "../components/ExtLink";
 
 const Index = () => {
   return (
@@ -14,14 +15,7 @@ const Index = () => {
           {"Rim Vilgalys"}
         </h1>
         <h2 className="text-3xl mt-4 font-hairline text-mtn mx-4 text-center">
-          <a
-            href="https://rim.computer/"
-            target="_blank"
-            rel="noopener"
-            className="border-b border-mtn"
-          >
-            {"https://rim.computer/"}
-          </a>
+          <ExtLink href="https://rim.computer">https://rim.computer</ExtLink>
         </h2>
         <article
           id="tech-stack"
@@ -37,26 +31,20 @@ const Index = () => {
             </p>
             <p className="pt-4">
               Before working in tech, I was the founder of{" "}
-              <a
-                href="https://brothersvilgalys.com/"
-                target="_blank"
-                rel="noopener"
-                className="border-b border-mtn"
-              >
+              <ExtLink href="https://brothersvilgalys.com/">
                 {"Brothers Vilgalys Spirits"}
-              </a>{" "}
+              </ExtLink>{" "}
               in Durham, NC. For 10 years we made Krupnikas Honey Liqueur, a
               spiced honey liqueur from a traditional Lithuanian recipe. We
               closed the distillery in 2023, but our Krupnikas recipe lives on
               at{" "}
-              <a
-                href="https://durhamdistillery.com/products/krupnikas-spiced-honey-liqueur"
-                target="_blank"
-                rel="noopener"
-                className="border-b border-mtn"
-              >
+              <ExtLink href="https://durhamdistillery.com/products/krupnikas-spiced-honey-liqueur">
                 {"Durham Distillery."}
-              </a>{" "}
+              </ExtLink>
+            </p>
+            <p className="pt-4">
+              I currently work at Google as a SWE on the reCAPTCHA & Web Risk
+              team.
             </p>
           </span>
         </article>
@@ -76,6 +64,15 @@ const Index = () => {
               {"Contact"}
             </span>
           </Link>
+          <a
+            href="https://bsky.app/profile/rim.computer"
+            target="_blank"
+            rel="noopener noreferer"
+            className=" flex px-4 cursor-pointer my-2 aville-hover"
+          >
+            <span>{"Bluesky"}</span>
+            <ExternalLinkIcon className="w-6 ml-1"></ExternalLinkIcon>
+          </a>
           <a
             href="https://github.com/rvilgalys"
             target="_blank"
