@@ -7,8 +7,7 @@ const portfolio = [
   {
     title: "Pipeline Pro Tools 2.0",
     href: "https://app.pipelineprotools.com/",
-    desc:
-      "Ground-up rewrite of paid suite of tools for Real Estate lead capture.",
+    desc: "Ground-up rewrite of paid suite of tools for Real Estate lead capture.",
     image: "",
     tags: [
       "next.js",
@@ -24,8 +23,7 @@ const portfolio = [
   {
     title: "SplitCrunch",
     href: "https://splitcrunch.com/",
-    desc:
-      "An app that helps real estate agents calcualte and compare their brokerage splits.",
+    desc: "An app that helps real estate agents calcualte and compare their brokerage splits.",
     image: "",
     tags: ["next.js", "react", "tailwind", "jamstack", "design", "dev"],
     date: "2020",
@@ -64,8 +62,7 @@ const portfolio = [
   },
   {
     title: "Food Fight!!!",
-    href:
-      "https://www.oculus.com/experiences/rift/2792691784081696/?locale=en_US",
+    href: "https://www.oculus.com/experiences/rift/2792691784081696/?locale=en_US",
     desc: "A VR Food Fight game.",
     image: "",
     tags: ["unity", "C#", "VR", "oculus", "design", "dev", "game"],
@@ -84,7 +81,7 @@ const portfolio = [
       "krupnikas",
       "wordpress",
     ],
-    date: "2013-Present",
+    date: "2013-2023",
   },
   {
     title: "NC Spirits App",
