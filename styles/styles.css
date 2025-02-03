@@ -1,8 +1,17 @@
-@import "./prism.css";
 @import "tailwindcss";
-@import "tailwindcss/preflight";
+@import "./prism.css";
 
 @tailwind utilities;
+
+@theme {
+  --color-aville: #a6c1ee;
+  --color-sun: #fbc2eb;
+  --color-mtn: #6392e6;
+  --color-stars: #392f5a;
+  --color-midnight: #080705;
+  --font-display: mr-eaves-modern, sans-serif;
+  --font-body: mr-eaves-modern, sans-serif;
+}
 
 html {
   --font-display: mr-eaves-modern, sans-serif;
@@ -42,9 +51,11 @@ code {
 *:after {
   box-sizing: inherit;
 }
-* {
-  margin: 0;
-  padding: 0;
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .sun {
