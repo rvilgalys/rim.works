@@ -6,6 +6,7 @@ import { useState } from "react";
 
 const Index = ({ posts }) => {
   const [selectedCategory, setSelectedCategory] = useState("");
+  console.log(posts);
 
   const allCategories = posts.reduce(
     (result, { meta }) =>
@@ -71,15 +72,18 @@ const Index = ({ posts }) => {
 export const getStaticProps = async () => {
   // using require here since it lets us parse exports
   const postContent = require.context("./", true, /\.mdx$/);
-  const posts = postContent.keys().map((post) => {
+  console.log("postContent: " + postContent);
+  const postPromises = postContent.keys().map(async (post) => {
     const link = post.substr(2).split(".")[0];
-    const meta = postContent(post).meta;
+    const content = await postContent(post);
+    const meta = content.meta;
 
     return {
       link,
       meta,
     };
   });
+  const posts = await Promise.all(postPromises);
 
   return {
     props: {
