@@ -38,6 +38,7 @@ const Index = ({ posts }) => {
           </button>
           {allCategories.map((category) => (
             <button
+              key={category}
               type="button"
               onClick={() => setSelectedCategory(category)}
               className={
@@ -72,7 +73,6 @@ const Index = ({ posts }) => {
 export const getStaticProps = async () => {
   // using require here since it lets us parse exports
   const postContent = require.context("./", true, /\.mdx$/);
-  console.log("postContent: " + postContent);
   const postPromises = postContent.keys().map(async (post) => {
     const link = post.substr(2).split(".")[0];
     const content = await postContent(post);
