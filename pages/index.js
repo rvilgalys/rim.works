@@ -23,11 +23,9 @@ const Index = () => {
         >
           <span className="font-light text-space text-xl px-8 py-2 border border-sun rounded-lg sun-shadow">
             <p>
-              Hello ✌️ I'm Rim Vilgalys. I'm a software engineer and writer
-              interested in technology, culture, politics, business, ultimate
-              frisbee, travel, and life in general. This site is a bit of a dev
-              portfolio if I ever need work, and also a blog where I write about
-              stuff.
+              I'm a software engineer and writer interested in technology,
+              culture, politics, business, ultimate frisbee, travel, and life in
+              general.
             </p>
             <p className="pt-4">
               Before working in tech, I was the founder of{" "}
